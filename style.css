@@ -1,0 +1,355 @@
+body {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lusitana", serif;
+    margin: 0;
+}
+
+.upper-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background: radial-gradient(#50416b, #14093f);
+}
+
+header {
+    width: 50svi;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    color: #E3DBFE;
+    flex-shrink: 0.5;
+}
+
+.header-button {
+    border-radius: 5px;
+    align-content:center;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #E3DBFE;
+}
+
+.header-button:hover {
+    background-color: #E3DBFE;
+    color: #14093f;
+}
+
+.welcome-header {
+    font-family: "Lusitana", serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3svi;
+    width: 80%;
+    margin-top: 50px;
+    color: #E3DBFE;
+}
+
+.welcome-text {
+    font-family: "Lusitana", serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 50px;
+    width: 35%;
+    color: #E3DBFE;
+}
+
+.write-wishlist {
+    position: relative;
+    background-color: #E3DBFE;
+    color: #14093f;
+    border: none;
+    border-radius: 90px;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    font-family: "Lusitana", serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.write-wishlist:hover {
+    background-color: #14093f;
+    color: #E3DBFE;
+    border: solid 1px #E3DBFE;
+}
+
+img {
+    width: 100%;
+}
+
+.tree-img {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 35%;
+    height: auto;
+}
+
+.santa-img {
+    position: absolute;
+    left: -300px;
+    top: -200px;
+    width: 35%;
+    height: auto;
+}
+
+.down-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.workshop-header {
+    font-family: "Lusitana", serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3svi;
+    width: 80%;
+    margin-top: 50px;
+    color: #14093f;
+    margin-bottom: 5px;
+}
+
+.down-img {
+    margin-top: 0;
+    position: relative;
+    width: 85%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.one {
+    background-image: url('./photo_5393209782871124582_x.jpg');
+}
+
+.two {
+    background-image: url('./photo_5393209782871124584_y.jpg');
+}
+
+.three {
+    background-image: url('./photo_5393209782871124585_y.jpg');
+}
+
+
+.panel {
+    height: 45vh;
+    flex: 0.8;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    transition: flex 1s ease-in;
+}
+  
+.panel.active {
+    flex: 2;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.workshop-text {
+    font-family: "Lusitana", serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 0px;
+    width: 85%;
+    color: #14093f;
+}
+
+.see-employees {
+    position: relative;
+    background-color: #14093f;
+    color: #E3DBFE;
+    border: none;
+    border-radius: 90px;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    font-family: "Lusitana", serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.see-employees:hover {
+    background-color: #E3DBFE;
+    color: #14093f;
+    border: solid 1px #14093f;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background: radial-gradient(#3a3f72, #14093f);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:#E3DBFE;
+    font-size: 14px;
+    bottom: 0;
+}
+
+.upper-section-empl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    background: radial-gradient(#50416b, #14093f);
+}
+
+.empl-text {
+    font-family: "Lusitana", serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0px;
+    width: 35%;
+    color: #E3DBFE;
+}
+
+.grid-container {
+    width: 90%;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 45% 45%;
+    padding: 10px;
+    margin-top: 0px;
+    row-gap: 50px;
+    align-items: center;
+}
+  
+.grid-item {
+    width: 95%;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-img {
+    width: 70%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.empl-header {
+    font-family: "Lusitana", serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3svi;
+    width: 100%;
+    margin: 0 0 10px 0;
+    color: #E3DBFE;
+}
+
+.elf-text {
+    font-family: "Lusitana", serif;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    width: 100%;
+    color: #14093f;
+    padding: 30px;
+    border-radius: 50px;
+    background-color: #e3dbfe;
+    text-indent: 40px;
+
+}
+
+.wishlist-backgr{
+    width: 60%;
+}
+
+form{
+    width: 50%;
+    justify-items: center;
+}
+
+textarea{
+    position: absolute;
+    top: 350px;
+    margin-left: 5px;
+    width: 49%;
+    height: 98.5vh;
+    line-height: 67px;
+    opacity: 50%;
+    font-family: "Lusitana", serif;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 24px;
+    resize: none;
+}
+
+form input[type="submit"]{
+    position: absolute;
+    bottom: 220px;
+    width: 50px;
+    left: 39%;
+    background-color: #14093f;
+    color: #E3DBFE;
+    border: none;
+    border-radius: 90px;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    font-family: "Lusitana", serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.lusitana-regular {
+    font-family: "Lusitana", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.lusitana-bold {
+    font-family: "Lusitana", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  
